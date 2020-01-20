@@ -1,0 +1,522 @@
+/* RESET */
+
+* {
+    box-sizing: border-box;
+}
+
+body, ul, li, a, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* HEADER */
+
+.header {
+    background: white;
+}
+
+.header-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.burger-logo a img {
+    width: 100px;
+}
+
+.localizacao-topo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.localizacao-topo img {
+    width: 22px;
+    height: 22px;
+    margin-right: 02px;
+}
+
+.localizacao-topo p {
+    font-size: 1.2em;
+}
+
+/* RESPONSIVO HEADER */
+
+/* smartphones */
+
+@media (max-width: 414px) {
+    .localizacao-topo p {
+        font-size: 1em;
+        
+    }
+    
+}
+
+/* Resolvendo endereço colado à marca */
+
+@media (min-width: 535px) and (max-width: 670px) {
+    .localizacao-topo img {
+        margin-left: 20px;
+    }
+}
+
+/* Breakpoint que uso para telas menores */
+
+@media (max-width: 669px) {
+    .header-container {
+        justify-content: center;
+    }
+
+    .burger-logo {
+        margin-bottom: 20px;
+    }
+
+}
+
+/* INTRODUÇÃO */
+
+.introducao {
+    background: url(../img/burger12.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 100px;
+    width: 100%;
+}
+
+
+.introducao-texto {
+    color: white;
+}
+
+.introducao-texto h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 25px #474343;
+}
+
+.introducao-texto p {
+    margin: 10px 0;
+    max-width: 400px;
+}
+
+.introducao-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.introducao-form input {
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+}
+
+.introducao-form button {
+    width: 200px;
+    display: block;
+    margin: 10px 0 0 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f8a022;
+    border-style: none;
+    color: white;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.introducao-form button:hover {
+    background: #f9f7f6;
+    color: #000;
+    border-style: none;
+    cursor: pointer;
+}
+
+/* RESPONSIVO INTRODUCAO */
+
+
+/* (smartphones) */
+
+
+@media (max-width: 414px) {
+
+    .introducao {
+        background: url(../img/burgermob-novo.jpg) no-repeat;
+        padding: 20px 10px;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .introducao-texto h1  {
+        text-shadow: 1px 1px 15px #474343;
+        font-size: 1.3em;
+    }
+
+    .introducao-form form input {
+        width: 200px;
+        margin: 5px 0;
+    }
+}
+
+/* (Breakpoint que uso para telas menores) */
+
+@media (max-width: 669px){
+    .introducao {
+        background: url(../img/burger12-mobile.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 60px 40px;
+    }
+
+    .introducao-texto {
+        text-align: center;
+    }
+
+    .introducao-texto h1  {
+        text-shadow: 1px 1px 15px #474343;
+    }
+
+    .introducao-texto p {
+        text-shadow: 1px 1px 5px #000;
+        margin: 10px auto;
+    }
+
+    .introducao-form {
+        justify-content: center;
+    }
+
+    .introducao-form input {
+        display: block;
+        width: 300px;
+        margin: 5px 0;
+    }
+
+    .introducao-form button {
+        margin: 10px auto;
+    }
+}
+
+
+/* (Mudando o tamanho da foto da introducao) */
+
+@media (min-width: 670px) and (max-width: 980px) {
+    .introducao {
+        background: url(../img/burger-tablet5.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 80px 30px;
+        margin-bottom: 40px;
+    }
+
+    .introducao h1 {
+        font-size: 2.2em;
+    }
+}
+/* 
+(Telas bem grandes)  */
+
+@media (min-width: 1500px) {
+    .introducao {
+        text-align: center;
+    }
+
+    .introducao-texto h1 {
+        font-size: 3em;
+    }
+
+    .introducao-texto p {
+        text-align: center;
+        display: inline-block;
+        text-shadow: 1px 1px 7px #000;
+    }
+
+    .introducao-form {
+        justify-content: center;
+    }
+
+    .introducao-form input {
+        display: block;
+        width: 350px;
+        margin: 5px 0;
+    }
+
+    .introducao-form button {
+        margin: 10px auto;
+    }
+}
+
+/* VANTAGENS BURGER CRIB */
+
+.vantagens-burger h2 {
+    text-align: center;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+.vantagens-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.vantagens-item {
+    margin: 0 10px;
+}
+
+.vantagens-item h3 {
+    text-align: center;
+}
+
+.vantagens-item img {
+    width: 150px;
+}
+
+/* RESPONSIVO VANTAGENS BURGER CRIB */
+
+/* (smartphones) */
+
+
+@media (max-width: 414px) {
+    .vantagens-burger h2 {
+        font-size: 1.3em;
+
+    }
+
+}
+
+/* (Breakpoint que uso para telas menores) */
+
+@media (max-width: 669px) {
+    .vantagens-burger h2 {
+        margin-top: 30px;
+    }
+
+    .vantagens-container {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .vantagens-container .vantagens-item img {
+        margin: 0 auto;
+        width: 170px;
+    }
+}
+
+/* IFOOD */
+
+.ifood {
+    background-color: #f0f0ef;
+}
+
+.ifood-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ifood-container h2 {
+    text-align: center;
+    width: 400px;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    margin: 0 20px;
+    color: #363636;
+}
+
+.ifood-item img {
+    width: 200px;
+}
+
+.ifood-item a {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: 2px solid #d5171b;
+    background: #d5171b;
+    color: #f3f3f3;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.ifood-item a:hover {
+    background: #f3f3f3;
+    color: #d5171b;
+}
+
+.ifood-item.marca-responsivo {
+    display: none;
+}
+
+
+/* RESPONSIVO IFOOD */
+
+
+/* (smartphones) */
+
+@media (max-width: 414px) {
+   .ifood-item h2 {
+       font-size: 1.2em;
+       max-width: 200px;
+   }
+
+   .ifood-item a {
+       padding: 10px 5px;
+       font-size: 1em;
+       width: 150px;
+   }
+}
+
+/* (Trocando a img: com mão para sem mão) */
+
+@media(max-width: 590px) {
+
+  .ifood-container {
+    flex-direction: column;
+    }
+
+  .ifood-item.mao-responsivo {
+   display: none;
+  }
+
+  .ifood-item.marca-responsivo {
+    display: block;
+  }
+
+  .ifood-item.marca-responsivo img {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+}   
+
+/* CONTATO */
+
+.contato {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.contato-item.endereco , .contato-item.telefone , .contato-item.redes {
+    width: 300px;
+    margin: 0 10px;
+}
+
+.contato-item h3 {
+    font-size: 1.5em;
+}
+
+.contato-item.icones {
+    display: flex;
+}
+
+.contato-item.icones img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* RESPONSIVO CONTATO */
+
+/* (smartphones) */
+
+@media (max-width: 414px) {
+
+    .contato-item h3 {
+        margin: 10px 0;
+    }
+
+    .contato-item.endereco , .contato-item.telefone , .contato-item.redes {
+        width: 200px;
+        margin: 0;
+    }
+}
+
+/* Breakpoint que uso para telas menores */
+
+@media (max-width: 669px) {
+    .contato {
+        flex-direction: column;
+    }
+
+    .contato-item h3 {
+        margin: 15px 0;
+    }
+}
+
+/* (distribuindo/alinhando os contatos em espaços iguais) */
+
+@media (min-width: 670px) and (max-width: 976px) { 
+    .contato-item {
+        flex: 1 1 200px;
+    }
+
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: #f6f6f3;
+    margin-top: 20px;
+}
+
+.footer-container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-container p {
+    font-size: .8em;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.footer-container p a {
+    color: black;
+    font-weight: bold;
+}
+
+.footer-container p a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVO FOOTER  */
+
+/* (smartphones) */
+
+@media (max-width: 414px) {
+    .footer-container p {
+        padding: 5px;
+        font-size: .5em;
+    }
+}
